@@ -9,7 +9,7 @@ It is currently composed of two fake providers:
 - Amadeus which becomes Programmadeus.
 - hotelbeds which becomes HotelCodes
 
-## Objective
+## Objective 
 
 The candidate must implement a `POST /quote` endpoint.
 The request body will be the following:
