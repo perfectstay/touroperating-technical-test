@@ -12,6 +12,7 @@ It is currently composed of two fake providers:
 ## Objective
 
 The candidate must implement a `POST /quote` endpoint.
+The response to a quote will contain an array with for each hotel room the cheapest flight price.
 The request body will be the following:
 
 ```json
@@ -92,7 +93,7 @@ Request
 ```json
 {
   "duration": int,
-  "departureDate": date, //  in YYYY-MM-DD format. ex. "2023-11-12"
+  "departureDate": date, //  in YYYY-MM-DDT00:00:00 format. ex. "2023-11-13T00:00:00Z"
   "iata": string // destination city in IATA format
 }
 ```
